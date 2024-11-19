@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #6A98D4;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #D9E6F3;
+    border-radius: 20px;
+    padding: 20px;
+    width: 365px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #EAF2F8;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#expression {
+    width: 70%;
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: #333;
+    outline: none;
+}
+
+#result {
+    font-size: 24px;
+    color: #333;
+    align-self: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #c1daf1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button.operator {
+    background-color: #7fb1d9;
+    /* Slightly darker shade for operators */
+    color: #344865;
+}
+
+button:hover {
+    background-color: #A4C7E7;
+}
+
+.enter {
+    background-color: #4A7CC3;
+    color: white;
+    grid-column: span 2;
+}
+
+.enter:hover {
+    background-color: #3A65A8;
+}
